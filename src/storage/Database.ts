@@ -76,13 +76,6 @@ export interface SelectMetadata {
 
 export type FieldsValue = string | { [index: string]: string[] }
 
-// todo primary是optional？？？
-export interface GetQuery {
-  fields?: FieldsValue[]
-  primaryValue?: string | number
-  where? (table: lf.schema.Table): lf.Predicate
-}
-
 export interface VirtualTableMetadataDescription {
   key: string
   resultType: 'Model' | 'Collection'
